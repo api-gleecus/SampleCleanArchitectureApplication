@@ -1,0 +1,200 @@
+2022-06-16 20:47:18.039 +05:30 [INF] Application Startup
+2022-06-16 20:47:19.275 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 20:47:19.286 +05:30 [INF] Hosting environment: Development
+2022-06-16 20:47:19.288 +05:30 [INF] Content root path: D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.API
+2022-06-16 20:47:19.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/index.html - -
+2022-06-16 20:47:19.525 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/index.html - - - 200 - text/html;charset=utf-8 221.5288ms
+2022-06-16 20:47:19.536 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - -
+2022-06-16 20:47:19.545 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.9648ms
+2022-06-16 20:47:19.767 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - -
+2022-06-16 20:47:19.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.7334ms
+2022-06-16 20:47:54.571 +05:30 [INF] Application Startup
+2022-06-16 20:47:55.710 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 20:47:55.720 +05:30 [INF] Hosting environment: Development
+2022-06-16 20:47:55.723 +05:30 [INF] Content root path: D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.API
+2022-06-16 20:47:55.741 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/index.html - -
+2022-06-16 20:47:55.958 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/index.html - - - 200 - text/html;charset=utf-8 219.6338ms
+2022-06-16 20:47:55.965 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - -
+2022-06-16 20:47:55.978 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 10.0458ms
+2022-06-16 20:47:56.176 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - -
+2022-06-16 20:47:56.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 92.2495ms
+2022-06-16 20:51:33.901 +05:30 [INF] Application Startup
+2022-06-16 20:51:35.676 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 20:51:35.688 +05:30 [INF] Hosting environment: Development
+2022-06-16 20:51:35.690 +05:30 [INF] Content root path: D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.API
+2022-06-16 20:51:35.713 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/index.html - -
+2022-06-16 20:51:35.974 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/index.html - - - 200 - text/html;charset=utf-8 261.8478ms
+2022-06-16 20:51:35.996 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - -
+2022-06-16 20:51:36.004 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 6.8404ms
+2022-06-16 20:51:36.251 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - -
+2022-06-16 20:51:36.344 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 92.1565ms
+2022-06-16 20:52:15.296 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44384/api/Employee application/json 115
+2022-06-16 20:52:15.331 +05:30 [INF] Executing endpoint 'Employee.API.Controllers.EmployeeController.CreateEmployee (Employee.API)'
+2022-06-16 20:52:15.365 +05:30 [INF] Route matched with {action = "CreateEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Employee.Application.Responses.EmployeeResponse]] CreateEmployee(Employee.Application.Commands.CreateEmployeeCommand) on controller Employee.API.Controllers.EmployeeController (Employee.API).
+2022-06-16 20:52:15.978 +05:30 [INF] Entity Framework Core 5.0.8 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-06-16 20:52:16.426 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([DateOfBirth], [Email], [FirstName], [LastName], [PhoneNumber])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [EmployeeId]
+FROM [Employees]
+WHERE @@ROWCOUNT = 1 AND [EmployeeId] = scope_identity();
+2022-06-16 20:52:16.490 +05:30 [INF] Executing OkObjectResult, writing value of type 'Employee.Application.Responses.EmployeeResponse'.
+2022-06-16 20:52:16.503 +05:30 [INF] Executed action Employee.API.Controllers.EmployeeController.CreateEmployee (Employee.API) in 1133.2325ms
+2022-06-16 20:52:16.505 +05:30 [INF] Executed endpoint 'Employee.API.Controllers.EmployeeController.CreateEmployee (Employee.API)'
+2022-06-16 20:52:16.508 +05:30 [INF] HTTP POST /api/Employee responded 200 in 1180.0938 ms
+2022-06-16 20:52:16.510 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44384/api/Employee application/json 115 - 200 - application/json;+charset=utf-8 1213.6810ms
+2022-06-16 20:52:27.159 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/api/Employee - -
+2022-06-16 20:52:27.161 +05:30 [INF] Executing endpoint 'Employee.API.Controllers.EmployeeController.Get (Employee.API)'
+2022-06-16 20:52:27.164 +05:30 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Employee.Core.Entities.Employee]] Get() on controller Employee.API.Controllers.EmployeeController (Employee.API).
+2022-06-16 20:52:32.993 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Email], [e].[FirstName], [e].[LastName], [e].[PhoneNumber]
+FROM [Employees] AS [e]
+2022-06-16 20:52:33.003 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee.Core.Entities.Employee, Employee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-16 20:52:33.006 +05:30 [INF] Executed action Employee.API.Controllers.EmployeeController.Get (Employee.API) in 5840.3196ms
+2022-06-16 20:52:33.007 +05:30 [INF] Executed endpoint 'Employee.API.Controllers.EmployeeController.Get (Employee.API)'
+2022-06-16 20:52:33.009 +05:30 [INF] HTTP GET /api/Employee responded 200 in 5848.1152 ms
+2022-06-16 20:52:33.011 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/api/Employee - - - 200 - application/json;+charset=utf-8 5851.7819ms
+2022-06-16 22:11:22.901 +05:30 [INF] Application Startup
+2022-06-16 22:11:24.283 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 22:11:24.293 +05:30 [INF] Hosting environment: Development
+2022-06-16 22:11:24.295 +05:30 [INF] Content root path: D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.API
+2022-06-16 22:11:24.315 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/index.html - -
+2022-06-16 22:11:24.549 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/index.html - - - 200 - text/html;charset=utf-8 235.7716ms
+2022-06-16 22:11:24.550 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - -
+2022-06-16 22:11:24.556 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.1091ms
+2022-06-16 22:11:24.751 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - -
+2022-06-16 22:11:24.838 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.6293ms
+2022-06-16 22:11:56.814 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:44384/api/Employee/1 - -
+2022-06-16 22:11:56.876 +05:30 [INF] Executing endpoint 'Employee.API.Controllers.EmployeeController.Delete (Employee.API)'
+2022-06-16 22:11:56.913 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Employee.Application.Common.ServiceResult`1[Employee.Application.Responses.EmployeeResponse]]] Delete(Int32, System.Threading.CancellationToken) on controller Employee.API.Controllers.EmployeeController (Employee.API).
+2022-06-16 22:12:15.769 +05:30 [INF] Entity Framework Core 5.0.8 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-06-16 22:12:16.232 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[DateOfBirth], [e].[Email], [e].[FirstName], [e].[LastName], [e].[PhoneNumber]
+FROM [Employees] AS [e]
+WHERE [e].[EmployeeId] = @__p_0
+2022-06-16 22:12:21.221 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Employees]
+WHERE [EmployeeId] = @p0;
+SELECT @@ROWCOUNT;
+2022-06-16 22:12:22.331 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Email], [e].[FirstName], [e].[LastName], [e].[PhoneNumber]
+FROM [Employees] AS [e]
+2022-06-16 22:12:22.451 +05:30 [INF] Executed action Employee.API.Controllers.EmployeeController.Delete (Employee.API) in 25532.7221ms
+2022-06-16 22:12:22.453 +05:30 [INF] Executed endpoint 'Employee.API.Controllers.EmployeeController.Delete (Employee.API)'
+2022-06-16 22:12:22.456 +05:30 [ERR] HTTP DELETE /api/Employee/1 responded 500 in 25582.4916 ms
+System.InvalidCastException: Unable to cast object of type 'System.Collections.Generic.List`1[Employee.Core.Entities.Employee]' to type 'Employee.Application.Common.ServiceResult`1[Employee.Application.Responses.EmployeeResponse]'.
+   at Employee.Application.Handlers.CommandHandlers.DeleteEmployeeHandler.Handle(DeleteEmployeeCommand request, CancellationToken cancellationToken) in D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.Application\Handlers\CommandHandlers\DeleteEmployeeHandler.cs:line 39
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Employee.API.Controllers.EmployeeController.Delete(Int32 id, CancellationToken cancellationToken) in D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.API\Controllers\EmployeeController.cs:line 65
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-06-16 22:12:22.489 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Collections.Generic.List`1[Employee.Core.Entities.Employee]' to type 'Employee.Application.Common.ServiceResult`1[Employee.Application.Responses.EmployeeResponse]'.
+   at Employee.Application.Handlers.CommandHandlers.DeleteEmployeeHandler.Handle(DeleteEmployeeCommand request, CancellationToken cancellationToken) in D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.Application\Handlers\CommandHandlers\DeleteEmployeeHandler.cs:line 39
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Employee.API.Controllers.EmployeeController.Delete(Int32 id, CancellationToken cancellationToken) in D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.API\Controllers\EmployeeController.cs:line 65
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-16 22:12:22.497 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:44384/api/Employee/1 - - - 500 - text/plain 25683.5576ms
+2022-06-16 22:24:38.804 +05:30 [INF] Application Startup
+2022-06-16 22:24:40.331 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 22:24:40.346 +05:30 [INF] Hosting environment: Development
+2022-06-16 22:24:40.352 +05:30 [INF] Content root path: D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.API
+2022-06-16 22:24:40.377 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/index.html - -
+2022-06-16 22:24:40.623 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/index.html - - - 200 - text/html;charset=utf-8 249.4565ms
+2022-06-16 22:24:40.655 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - -
+2022-06-16 22:24:40.661 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.8008ms
+2022-06-16 22:24:40.916 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - -
+2022-06-16 22:24:41.016 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.7690ms
+2022-06-16 22:24:54.051 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:44384/api/Employee/2 - -
+2022-06-16 22:24:54.108 +05:30 [INF] Executing endpoint 'Employee.API.Controllers.EmployeeController.Delete (Employee.API)'
+2022-06-16 22:24:54.135 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Employee.Application.Common.ServiceResult`1[Employee.Application.Responses.EmployeeResponse]]] Delete(Int32, System.Threading.CancellationToken) on controller Employee.API.Controllers.EmployeeController (Employee.API).
+2022-06-16 22:24:57.893 +05:30 [INF] Entity Framework Core 5.0.8 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-06-16 22:24:58.319 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[DateOfBirth], [e].[Email], [e].[FirstName], [e].[LastName], [e].[PhoneNumber]
+FROM [Employees] AS [e]
+WHERE [e].[EmployeeId] = @__p_0
+2022-06-16 22:24:58.436 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Employees]
+WHERE [EmployeeId] = @p0;
+SELECT @@ROWCOUNT;
+2022-06-16 22:24:58.461 +05:30 [INF] Executing OkObjectResult, writing value of type 'null'.
+2022-06-16 22:24:58.466 +05:30 [INF] Executed action Employee.API.Controllers.EmployeeController.Delete (Employee.API) in 4326.3798ms
+2022-06-16 22:24:58.468 +05:30 [INF] Executed endpoint 'Employee.API.Controllers.EmployeeController.Delete (Employee.API)'
+2022-06-16 22:24:58.470 +05:30 [INF] HTTP DELETE /api/Employee/2 responded 204 in 4365.1566 ms
+2022-06-16 22:24:58.472 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:44384/api/Employee/2 - - - 204 0 - 4421.8116ms
+2022-06-16 22:40:37.285 +05:30 [INF] Application Startup
+2022-06-16 22:40:38.675 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 22:40:38.687 +05:30 [INF] Hosting environment: Development
+2022-06-16 22:40:38.689 +05:30 [INF] Content root path: D:\TFS\Practice\PA Project Task\EmployeeManagementCleanArchitecture\Employee.API
+2022-06-16 22:40:38.710 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/index.html - -
+2022-06-16 22:40:38.969 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/index.html - - - 200 - text/html;charset=utf-8 259.0653ms
+2022-06-16 22:40:38.972 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - -
+2022-06-16 22:40:38.985 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 12.0345ms
+2022-06-16 22:40:39.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - -
+2022-06-16 22:40:39.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.6152ms
+2022-06-16 22:41:23.147 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:44384/api/Employee application/json 114
+2022-06-16 22:41:23.175 +05:30 [INF] Executing endpoint 'Employee.API.Controllers.EmployeeController.Update (Employee.API)'
+2022-06-16 22:41:23.202 +05:30 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Employee.Application.Common.ServiceResult`1[Employee.Application.Responses.EmployeeResponse]]] Update(Employee.Application.Handlers.CommandHandlers.UpdateEmployeeCommand, System.Threading.CancellationToken) on controller Employee.API.Controllers.EmployeeController (Employee.API).
+2022-06-16 22:41:26.793 +05:30 [INF] Entity Framework Core 5.0.8 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-06-16 22:41:27.230 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[DateOfBirth], [e].[Email], [e].[FirstName], [e].[LastName], [e].[PhoneNumber]
+FROM [Employees] AS [e]
+WHERE [e].[EmployeeId] = @__p_0
+2022-06-16 22:41:27.348 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Int64), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Employees] SET [DateOfBirth] = @p0, [Email] = @p1, [FirstName] = @p2, [LastName] = @p3, [PhoneNumber] = @p4
+WHERE [EmployeeId] = @p5;
+SELECT @@ROWCOUNT;
+2022-06-16 22:41:27.489 +05:30 [INF] Executing OkObjectResult, writing value of type 'Employee.Application.Common.ServiceResult`1[[Employee.Application.Responses.EmployeeResponse, Employee.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-16 22:41:27.508 +05:30 [INF] Executed action Employee.API.Controllers.EmployeeController.Update (Employee.API) in 4300.6108ms
+2022-06-16 22:41:27.510 +05:30 [INF] Executed endpoint 'Employee.API.Controllers.EmployeeController.Update (Employee.API)'
+2022-06-16 22:41:27.513 +05:30 [INF] HTTP PUT /api/Employee responded 200 in 4340.2489 ms
+2022-06-16 22:41:27.515 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:44384/api/Employee application/json 114 - 200 - application/json;+charset=utf-8 4367.7462ms
+2022-06-16 22:41:43.891 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44384/api/Employee - -
+2022-06-16 22:41:43.893 +05:30 [INF] Executing endpoint 'Employee.API.Controllers.EmployeeController.Get (Employee.API)'
+2022-06-16 22:41:43.898 +05:30 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Employee.Core.Entities.Employee]] Get() on controller Employee.API.Controllers.EmployeeController (Employee.API).
+2022-06-16 22:41:43.909 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[DateOfBirth], [e].[Email], [e].[FirstName], [e].[LastName], [e].[PhoneNumber]
+FROM [Employees] AS [e]
+2022-06-16 22:41:43.913 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Employee.Core.Entities.Employee, Employee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-16 22:41:43.916 +05:30 [INF] Executed action Employee.API.Controllers.EmployeeController.Get (Employee.API) in 16.7559ms
+2022-06-16 22:41:43.918 +05:30 [INF] Executed endpoint 'Employee.API.Controllers.EmployeeController.Get (Employee.API)'
+2022-06-16 22:41:43.919 +05:30 [INF] HTTP GET /api/Employee responded 200 in 25.8807 ms
+2022-06-16 22:41:43.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44384/api/Employee - - - 200 - application/json;+charset=utf-8 28.6579ms
